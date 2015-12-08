@@ -4,7 +4,7 @@ require 'savon'
 
 module Authanvil
 
-  def request(username, one_time_password, sas_url, site_id)
+  def self.request(username, one_time_password, sas_url, site_id)
 
     # create a client for the service
     client = Savon.client(wsdl: "#{sas_url}?wsdl")
