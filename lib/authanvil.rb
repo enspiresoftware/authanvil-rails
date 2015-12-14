@@ -1,5 +1,4 @@
 require "authanvil/version"
-require 'pry'
 require 'savon'
 
 module Authanvil
