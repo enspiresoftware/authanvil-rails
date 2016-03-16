@@ -14,8 +14,6 @@ module Authanvil
     # create a client for the service
     client = Savon.client(wsdl: "#{sas_url}?wsdl")
 
-    client.operations
-
     # call the 'authenticate' operation
     response = client.call(:authenticate, message: { 'Username' => username, 'Passcode' => one_time_password, 'TokenType' => 1, 'SiteID' => site_id })
 

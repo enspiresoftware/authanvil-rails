@@ -7,7 +7,8 @@ Gem::Specification.new do |spec|
   spec.name          = "authanvil"
   spec.version       = Authanvil::VERSION
   spec.authors       = ["Alex Myers"]
-  spec.email         = ["alex.myers@enspiresoftware.com"]
+  spec.email         = ["dev.alex.myers@gmail.com"]
+  spec.description   = "API wrapper for AuthAnvil Two Factor Authentication"
 
   spec.summary       = %q{Ruby Wrapper for AuthAnvil 2FA}
   spec.homepage      = "https://github.com/enspiresoftware/authanvil-rails"
@@ -20,8 +21,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "minitest"
-  spec.add_development_dependency "minitest-emoji"
+  spec.add_development_dependency "minitest", "~>0"
+  spec.add_development_dependency "minitest-emoji", "~>0"
 
-  spec.add_dependency 'savon'
+  spec.add_dependency 'savon', "~>0"
 end
